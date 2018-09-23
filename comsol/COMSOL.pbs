@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#
+#PBS -N COMSOL
+#PBS -q COMSOL
+#PBS -l nodes=1:ppn=20
+#PBS -l walltime=24:00:00
+#
+
+comsol -clustersimple batch -nn 1 -np 20  -f /home/hostfile -inputfile /public/comsol/COMSOL53a/Multiphysics/applications/COMSOL_Multiphysics/Tutorials/micromixer_cluster.mph -outputfile ~/20180920/result.mph -batchlog ~/20180920/test.log
