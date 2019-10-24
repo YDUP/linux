@@ -33,8 +33,8 @@
     + Check the status ```qstat``` and ```pestat```
     + And the process will be printed into a file ```*.o```
     + Kill your pbs mission ```qdel```+ID (Each submitted task has a unique ID)
-    + Note: if you want to submit batch tasks related to a same main script, which always occurs in the hyper-parameters tuning or different data & model test, you can use a good-formatted template of script with ```${param}``` in your script, and submit them with a python with following way:
-    ```
+    + Note: if you want to submit batch tasks related to a same main script, which always occurs in the hyper-parameters tuning or different data & model test, you can use a good-formatted template of script with ```${param}``` in your script, and submit them one shot with python in following code:
+    ```python
     import subprocess
     qsub_command = """qsub -v param={0} template.sh""".format(param) # strip the tail '.csv'
     exit_status = subprocess.call(qsub_command, shell=True)
