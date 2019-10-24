@@ -3,6 +3,8 @@
 1. Log in the server
     + Use ```ssh``` in terminal of your computer
         * ```ssh -p 2222 username@IP```
+        * Note: pls use the campus network or use VPN to access campus network
+        * The password is invisible! Once you finish, just click ENTER of keyboard. 
     + Or use softwares, for example, putty, Xshell, etc.
 2. Log out the server
     +  Exit the terminal or software of your computer
