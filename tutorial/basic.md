@@ -63,3 +63,17 @@
         * Controller
         * Computation node
 
+# Run Remote Jupyter Notebook
+
+1. Run the remote jupyter without browser ```jupyter notebook --no-browser --port=X```
+2. Connect the local jupyter port and remote one with ```ssh -p 2222 -N -f -L localhost:Y:localhost:X username@IP```
+3. Open the local website ```http://localhost:Y```
+
++ Close the local port
+1. Find the PID of certain port ```lsof -i :port```
+2. Kill the process ```kill -9 <PID>```
+
+
+
+
+
