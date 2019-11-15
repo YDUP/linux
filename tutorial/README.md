@@ -56,11 +56,11 @@
 2. If the server is out of control, we should shutdown it by force
     + Shutdown (turn down) process:
         * Computation node
-        * Controller
+        * Controller node (253 node) and IO node
         * Storage node
     + Restart (turn on) process:
         * Storage node
-        * Controller
+        * Controller node (253 node) and IO node
         * Computation node
 
 # Run Remote Jupyter Notebook
